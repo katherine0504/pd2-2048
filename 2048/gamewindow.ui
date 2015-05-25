@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>gamewindow</class>
+ <widget class="QWidget" name="gamewindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1068</width>
+    <height>1319</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>40</y>
+     <width>200</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Copperplate Gothic Bold</family>
+     <pointsize>36</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>2048</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>310</y>
+     <width>631</width>
+     <height>623</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="4" column="0">
+     <widget class="QLabel" name="B13">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLabel" name="B15">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="B1">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="B2">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="B7">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="B3">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="B8">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="B9">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="B4">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="B5">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="B6">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="B10">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLabel" name="B11">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QLabel" name="B12">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QLabel" name="B16">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLabel" name="B14">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

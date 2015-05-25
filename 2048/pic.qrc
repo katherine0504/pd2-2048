@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/pic">
+        <file>PIC/2.jpg</file>
+        <file>PIC/4.jpg</file>
+        <file>PIC/8.jpg</file>
+        <file>PIC/16.jpg</file>
+        <file>PIC/32.jpg</file>
+        <file>PIC/64.jpg</file>
+        <file>PIC/128.jpg</file>
+        <file>PIC/256.jpg</file>
+        <file>PIC/512.jpg</file>
+        <file>PIC/1024.jpg</file>
+        <file>PIC/2048.jpg</file>
+        <file>PIC/0.jpg</file>
+    </qresource>
+</RCC>
