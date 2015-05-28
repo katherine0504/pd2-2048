@@ -119,18 +119,25 @@ compiler_rcc_make_all: release/qrc_pic.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_pic.cpp
 release/qrc_pic.cpp: ../2048/pic.qrc \
-		../2048/PIC/1024.jpg \
-		../2048/PIC/0.jpg \
-		../2048/PIC/4.jpg \
+		../2048/PIC/512.jpg \
+		../2048/PIC/win.jpg \
+		../2048/PIC/start.jpg \
+		../2048/PIC/32.jpg \
+		../2048/PIC/blank.jpg \
+		../2048/PIC/end.jpg \
 		../2048/PIC/128.jpg \
+		../2048/PIC/0.jpg \
+		../2048/PIC/reset.jpg \
+		../2048/PIC/lose.jpg \
+		../2048/PIC/2.jpg \
+		../2048/PIC/4.jpg \
+		../2048/PIC/2048.jpg \
 		../2048/PIC/8.jpg \
 		../2048/PIC/16.jpg \
-		../2048/PIC/64.jpg \
-		../2048/PIC/512.jpg \
-		../2048/PIC/2048.jpg \
-		../2048/PIC/2.jpg \
-		../2048/PIC/32.jpg \
-		../2048/PIC/256.jpg
+		../2048/PIC/score.jpg \
+		../2048/PIC/256.jpg \
+		../2048/PIC/1024.jpg \
+		../2048/PIC/64.jpg
 	F:\Qt\5.4\mingw491_32\bin\rcc.exe -name pic ..\2048\pic.qrc -o release\qrc_pic.cpp
 
 compiler_moc_header_make_all: release/moc_mainwindow.cpp release/moc_gamewindow.cpp
@@ -239,6 +246,8 @@ release/moc_mainwindow.cpp: ../2048/gamewindow.h \
 		F:/Qt/5.4/mingw491_32/include/QtCore/qfiledevice.h \
 		F:/Qt/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		F:/Qt/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
+		F:/Qt/5.4/mingw491_32/include/QtCore/QDebug \
+		F:/Qt/5.4/mingw491_32/include/QtGui/QKeyEvent \
 		../2048/blank.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/QMainWindow \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/qmainwindow.h \
@@ -349,6 +358,8 @@ release/moc_gamewindow.cpp: F:/Qt/5.4/mingw491_32/include/QtWidgets/QWidget \
 		F:/Qt/5.4/mingw491_32/include/QtCore/qfiledevice.h \
 		F:/Qt/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		F:/Qt/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
+		F:/Qt/5.4/mingw491_32/include/QtCore/QDebug \
+		F:/Qt/5.4/mingw491_32/include/QtGui/QKeyEvent \
 		../2048/blank.h \
 		../2048/gamewindow.h
 	F:\Qt\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IF:/Qt/5.4/mingw491_32/mkspecs/win32-g++ -IC:/Users/Willy/Desktop/2048/2048 -IF:/Qt/5.4/mingw491_32/include -IF:/Qt/5.4/mingw491_32/include/QtWidgets -IF:/Qt/5.4/mingw491_32/include/QtGui -IF:/Qt/5.4/mingw491_32/include/QtCore -I. ..\2048\gamewindow.h -o release\moc_gamewindow.cpp
@@ -480,6 +491,8 @@ release/main.o: ../2048/main.cpp ../2048/mainwindow.h \
 		F:/Qt/5.4/mingw491_32/include/QtCore/qfiledevice.h \
 		F:/Qt/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		F:/Qt/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
+		F:/Qt/5.4/mingw491_32/include/QtCore/QDebug \
+		F:/Qt/5.4/mingw491_32/include/QtGui/QKeyEvent \
 		../2048/blank.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/QMainWindow \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/qmainwindow.h \
@@ -598,6 +611,8 @@ release/mainwindow.o: ../2048/mainwindow.cpp ../2048/mainwindow.h \
 		F:/Qt/5.4/mingw491_32/include/QtCore/qfiledevice.h \
 		F:/Qt/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		F:/Qt/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
+		F:/Qt/5.4/mingw491_32/include/QtCore/QDebug \
+		F:/Qt/5.4/mingw491_32/include/QtGui/QKeyEvent \
 		../2048/blank.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/QMainWindow \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/qmainwindow.h \
@@ -617,6 +632,11 @@ release/mainwindow.o: ../2048/mainwindow.cpp ../2048/mainwindow.h \
 		F:/Qt/5.4/mingw491_32/include/QtGui/qinputmethod.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/QButtonGroup \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/qbuttongroup.h \
+		F:/Qt/5.4/mingw491_32/include/QtWidgets/QHBoxLayout \
+		F:/Qt/5.4/mingw491_32/include/QtWidgets/qboxlayout.h \
+		F:/Qt/5.4/mingw491_32/include/QtWidgets/qlayout.h \
+		F:/Qt/5.4/mingw491_32/include/QtWidgets/qlayoutitem.h \
+		F:/Qt/5.4/mingw491_32/include/QtWidgets/qgridlayout.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/QHeaderView \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/qheaderview.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemview.h \
@@ -642,6 +662,7 @@ release/mainwindow.o: ../2048/mainwindow.cpp ../2048/mainwindow.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/QPushButton \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h \
+		F:/Qt/5.4/mingw491_32/include/QtWidgets/QSpacerItem \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/QStatusBar \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/qstatusbar.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/QToolBar \
@@ -753,6 +774,8 @@ release/gamewindow.o: ../2048/gamewindow.cpp ../2048/gamewindow.h \
 		F:/Qt/5.4/mingw491_32/include/QtCore/qfiledevice.h \
 		F:/Qt/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		F:/Qt/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
+		F:/Qt/5.4/mingw491_32/include/QtCore/QDebug \
+		F:/Qt/5.4/mingw491_32/include/QtGui/QKeyEvent \
 		../2048/blank.h \
 		ui_gamewindow.h \
 		F:/Qt/5.4/mingw491_32/include/QtCore/QVariant \
@@ -769,11 +792,11 @@ release/gamewindow.o: ../2048/gamewindow.cpp ../2048/gamewindow.h \
 		F:/Qt/5.4/mingw491_32/include/QtGui/qinputmethod.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/QButtonGroup \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/qbuttongroup.h \
-		F:/Qt/5.4/mingw491_32/include/QtWidgets/QHBoxLayout \
-		F:/Qt/5.4/mingw491_32/include/QtWidgets/qboxlayout.h \
+		F:/Qt/5.4/mingw491_32/include/QtWidgets/QGridLayout \
+		F:/Qt/5.4/mingw491_32/include/QtWidgets/qgridlayout.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/qlayout.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/qlayoutitem.h \
-		F:/Qt/5.4/mingw491_32/include/QtWidgets/qgridlayout.h \
+		F:/Qt/5.4/mingw491_32/include/QtWidgets/qboxlayout.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/QHeaderView \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/qheaderview.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemview.h \
@@ -793,7 +816,12 @@ release/gamewindow.o: ../2048/gamewindow.cpp ../2048/gamewindow.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
 		F:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
-		F:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h
+		F:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h \
+		F:/Qt/5.4/mingw491_32/include/QtWidgets/QPushButton \
+		F:/Qt/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
+		F:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h \
+		F:/Qt/5.4/mingw491_32/include/QtWidgets/QSpacerItem \
+		F:/Qt/5.4/mingw491_32/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\gamewindow.o ..\2048\gamewindow.cpp
 
 release/blank.o: ../2048/blank.cpp ../2048/blank.h

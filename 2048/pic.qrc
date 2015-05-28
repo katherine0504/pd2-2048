@@ -12,5 +12,19 @@
         <file>PIC/1024.jpg</file>
         <file>PIC/2048.jpg</file>
         <file>PIC/0.jpg</file>
+        <file>PIC/end.jpg</file>
+        <file>PIC/lose.jpg</file>
+        <file>PIC/reset.jpg</file>
+        <file>PIC/start.jpg</file>
+        <file>PIC/win.jpg</file>
+        <file>PIC/score.jpg</file>
+        <file>PIC/blank.jpg</file>
+        <file>PIC/grey.jpg</file>
+        <file>PIC/cont.jpg</file>
+        <file>PIC/4096.jpg</file>
+        <file>PIC/8192.jpg</file>
+        <file>PIC/16384.jpg</file>
+        <file>PIC/32768.jpg</file>
+        <file>PIC/65536.jpg</file>
     </qresource>
 </RCC>

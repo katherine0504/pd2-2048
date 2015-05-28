@@ -6,32 +6,32 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1068</width>
-    <height>1319</height>
+    <width>920</width>
+    <height>1000</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>2048</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>420</x>
-     <y>40</y>
-     <width>200</width>
-     <height>200</height>
+     <x>80</x>
+     <y>10</y>
+     <width>375</width>
+     <height>100</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>200</width>
-     <height>200</height>
+     <width>375</width>
+     <height>100</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>200</width>
-     <height>200</height>
+     <width>375</width>
+     <height>100</height>
     </size>
    </property>
    <property name="font">
@@ -43,37 +43,40 @@
     </font>
    </property>
    <property name="text">
-    <string>2048</string>
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="pic.qrc">:/pic/PIC/score.jpg</pixmap>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>120</x>
      <y>310</y>
-     <width>631</width>
-     <height>623</height>
+     <width>664</width>
+     <height>664</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="4" column="0">
-     <widget class="QLabel" name="B13">
+    <item row="6" column="2">
+     <widget class="QLabel" name="B14">
       <property name="minimumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="baseSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="text">
@@ -81,24 +84,49 @@
       </property>
      </widget>
     </item>
-    <item row="4" column="2">
-     <widget class="QLabel" name="B15">
+    <item row="6" column="0">
+     <widget class="QLabel" name="B13">
       <property name="minimumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="baseSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="4">
+     <widget class="QLabel" name="B15">
+      <property name="minimumSize">
+       <size>
+        <width>155</width>
+        <height>155</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>155</width>
+        <height>155</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="text">
@@ -110,20 +138,20 @@
      <widget class="QLabel" name="B1">
       <property name="minimumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="baseSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="text">
@@ -131,49 +159,24 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="1">
-     <widget class="QLabel" name="B2">
-      <property name="minimumSize">
-       <size>
-        <width>150</width>
-        <height>150</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>150</width>
-        <height>150</height>
-       </size>
-      </property>
-      <property name="baseSize">
-       <size>
-        <width>150</width>
-        <height>150</height>
-       </size>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="2">
+    <item row="2" column="4">
      <widget class="QLabel" name="B7">
       <property name="minimumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="baseSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="text">
@@ -182,23 +185,23 @@
      </widget>
     </item>
     <item row="0" column="2">
-     <widget class="QLabel" name="B3">
+     <widget class="QLabel" name="B2">
       <property name="minimumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="baseSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="text">
@@ -206,24 +209,24 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="3">
+    <item row="2" column="6">
      <widget class="QLabel" name="B8">
       <property name="minimumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="baseSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="text">
@@ -231,49 +234,24 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="B9">
-      <property name="minimumSize">
-       <size>
-        <width>150</width>
-        <height>150</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>150</width>
-        <height>150</height>
-       </size>
-      </property>
-      <property name="baseSize">
-       <size>
-        <width>150</width>
-        <height>150</height>
-       </size>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="3">
+    <item row="0" column="6">
      <widget class="QLabel" name="B4">
       <property name="minimumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="baseSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="text">
@@ -281,24 +259,24 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="B5">
+    <item row="4" column="0">
+     <widget class="QLabel" name="B9">
       <property name="minimumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="baseSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="text">
@@ -306,24 +284,24 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="1">
-     <widget class="QLabel" name="B6">
+    <item row="0" column="4">
+     <widget class="QLabel" name="B3">
       <property name="minimumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="baseSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="text">
@@ -331,24 +309,49 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
+    <item row="4" column="4">
+     <widget class="QLabel" name="B11">
+      <property name="minimumSize">
+       <size>
+        <width>155</width>
+        <height>155</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>155</width>
+        <height>155</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>155</width>
+        <height>155</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
      <widget class="QLabel" name="B10">
       <property name="minimumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="baseSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="text">
@@ -357,23 +360,23 @@
      </widget>
     </item>
     <item row="2" column="2">
-     <widget class="QLabel" name="B11">
+     <widget class="QLabel" name="B6">
       <property name="minimumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="baseSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="text">
@@ -381,24 +384,49 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="3">
+    <item row="2" column="0">
+     <widget class="QLabel" name="B5">
+      <property name="minimumSize">
+       <size>
+        <width>155</width>
+        <height>155</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>155</width>
+        <height>155</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>155</width>
+        <height>155</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="6">
      <widget class="QLabel" name="B12">
       <property name="minimumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="baseSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="text">
@@ -406,24 +434,24 @@
       </property>
      </widget>
     </item>
-    <item row="4" column="3">
+    <item row="6" column="6">
      <widget class="QLabel" name="B16">
       <property name="minimumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="baseSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>155</width>
+        <height>155</height>
        </size>
       </property>
       <property name="text">
@@ -431,34 +459,355 @@
       </property>
      </widget>
     </item>
-    <item row="4" column="1">
-     <widget class="QLabel" name="B14">
+    <item row="6" column="1">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="4" column="3">
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="3" column="0">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="4" column="5">
+     <spacer name="horizontalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="5" column="0">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="0">
+     <spacer name="verticalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>10</y>
+     <width>122</width>
+     <height>276</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_Restart">
       <property name="minimumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>120</width>
+        <height>120</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>120</width>
+        <height>120</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Copperplate Gothic Bold</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="pic.qrc">
+        <normaloff>:/pic/PIC/reset.jpg</normaloff>:/pic/PIC/reset.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>120</width>
+        <height>120</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_End">
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>120</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>120</height>
        </size>
       </property>
       <property name="baseSize">
        <size>
-        <width>150</width>
-        <height>150</height>
+        <width>0</width>
+        <height>0</height>
        </size>
       </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="pic.qrc">
+        <normaloff>:/pic/PIC/end.jpg</normaloff>:/pic/PIC/end.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>120</width>
+        <height>120</height>
+       </size>
       </property>
      </widget>
     </item>
    </layout>
   </widget>
+  <widget class="QLabel" name="WIN">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>550</y>
+     <width>450</width>
+     <height>225</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>450</width>
+     <height>225</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>450</width>
+     <height>225</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>450</width>
+     <height>225</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LOSE">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>550</y>
+     <width>450</width>
+     <height>225</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>450</width>
+     <height>225</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>450</width>
+     <height>225</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>450</width>
+     <height>225</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SCORE">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>150</y>
+     <width>450</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>450</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>450</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>450</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Waltograph</family>
+     <pointsize>72</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_cont">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>75</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>150</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>150</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>150</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="pic.qrc">
+     <normaloff>:/pic/PIC/cont.jpg</normaloff>:/pic/PIC/cont.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>150</width>
+     <height>150</height>
+    </size>
+   </property>
+  </widget>
  </widget>
- <resources/>
- <connections/>
+ <resources>
+  <include location="pic.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_End</sender>
+   <signal>clicked()</signal>
+   <receiver>gamewindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>691</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>790</x>
+     <y>32</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

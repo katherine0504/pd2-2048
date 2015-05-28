@@ -6,12 +6,15 @@ gamewindow::gamewindow(QWidget *parent) :
     ui(new Ui::gamewindow)
 {
     ui->setupUi(this);
+    //設定背景為白色
+    this->setStyleSheet("background-color: white;");
 
 }
 
 //設定每個位置的圖片
 void gamewindow::SetPic(blank & b)
 {
+    //先找到位置 再找他的數字 開啟對應圖片
     switch (b.position)
     {
     case 1:
@@ -64,6 +67,28 @@ void gamewindow::SetPic(blank & b)
             case 2048:
                 ui->B1->setPixmap(QPixmap(":/pic/PIC/2048.jpg"));
                 break;
+
+            case 4096:
+                ui->B1->setPixmap(QPixmap(":/pic/PIC/4096.jpg"));
+                break;
+
+            case 8192:
+                ui->B1->setPixmap(QPixmap(":/pic/PIC/8192.jpg"));
+                break;
+
+            case 16384:
+                ui->B1->setPixmap(QPixmap(":/pic/PIC/16384.jpg"));
+                break;
+
+            case 32768:
+                ui->B1->setPixmap(QPixmap(":/pic/PIC/32768.jpg"));
+                break;
+
+            case 65536:
+                ui->B1->setPixmap(QPixmap(":/pic/PIC/65536.jpg"));
+                break;
+
+
         }
         break;
 
@@ -116,6 +141,26 @@ void gamewindow::SetPic(blank & b)
 
             case 2048:
                 ui->B2->setPixmap(QPixmap(":/pic/PIC/2048.jpg"));
+                break;
+
+            case 4096:
+                ui->B2->setPixmap(QPixmap(":/pic/PIC/4096.jpg"));
+                break;
+
+            case 8192:
+                ui->B2->setPixmap(QPixmap(":/pic/PIC/8192.jpg"));
+                break;
+
+            case 16384:
+                ui->B2->setPixmap(QPixmap(":/pic/PIC/16384.jpg"));
+                break;
+
+            case 32768:
+                ui->B2->setPixmap(QPixmap(":/pic/PIC/32768.jpg"));
+                break;
+
+            case 65536:
+                ui->B2->setPixmap(QPixmap(":/pic/PIC/65536.jpg"));
                 break;
         }
         break;
@@ -170,6 +215,26 @@ void gamewindow::SetPic(blank & b)
             case 2048:
                 ui->B3->setPixmap(QPixmap(":/pic/PIC/2048.jpg"));
                 break;
+
+            case 4096:
+                ui->B3->setPixmap(QPixmap(":/pic/PIC/4096.jpg"));
+                break;
+
+            case 8192:
+                ui->B3->setPixmap(QPixmap(":/pic/PIC/8192.jpg"));
+                break;
+
+            case 16384:
+                ui->B3->setPixmap(QPixmap(":/pic/PIC/16384.jpg"));
+                break;
+
+            case 32768:
+                ui->B3->setPixmap(QPixmap(":/pic/PIC/32768.jpg"));
+                break;
+
+            case 65536:
+                ui->B3->setPixmap(QPixmap(":/pic/PIC/65536.jpg"));
+                break;
         }
         break;
 
@@ -222,6 +287,26 @@ void gamewindow::SetPic(blank & b)
 
             case 2048:
                 ui->B4->setPixmap(QPixmap(":/pic/PIC/2048.jpg"));
+                break;
+
+            case 4096:
+                ui->B4->setPixmap(QPixmap(":/pic/PIC/4096.jpg"));
+                break;
+
+            case 8192:
+                ui->B4->setPixmap(QPixmap(":/pic/PIC/8192.jpg"));
+                break;
+
+            case 16384:
+                ui->B4->setPixmap(QPixmap(":/pic/PIC/16384.jpg"));
+                break;
+
+            case 32768:
+                ui->B4->setPixmap(QPixmap(":/pic/PIC/32768.jpg"));
+                break;
+
+            case 65536:
+                ui->B4->setPixmap(QPixmap(":/pic/PIC/65536.jpg"));
                 break;
         }
         break;
@@ -276,6 +361,26 @@ void gamewindow::SetPic(blank & b)
             case 2048:
                 ui->B5->setPixmap(QPixmap(":/pic/PIC/2048.jpg"));
                 break;
+
+            case 4096:
+                ui->B5->setPixmap(QPixmap(":/pic/PIC/4096.jpg"));
+                break;
+
+            case 8192:
+                ui->B5->setPixmap(QPixmap(":/pic/PIC/8192.jpg"));
+                break;
+
+            case 16384:
+                ui->B5->setPixmap(QPixmap(":/pic/PIC/16384.jpg"));
+                break;
+
+            case 32768:
+                ui->B5->setPixmap(QPixmap(":/pic/PIC/32768.jpg"));
+                break;
+
+            case 65536:
+                ui->B5->setPixmap(QPixmap(":/pic/PIC/65536.jpg"));
+                break;
         }
         break;
 
@@ -328,6 +433,26 @@ void gamewindow::SetPic(blank & b)
 
             case 2048:
                 ui->B6->setPixmap(QPixmap(":/pic/PIC/2048.jpg"));
+                break;
+
+            case 4096:
+                ui->B6->setPixmap(QPixmap(":/pic/PIC/4096.jpg"));
+                break;
+
+            case 8192:
+                ui->B6->setPixmap(QPixmap(":/pic/PIC/8192.jpg"));
+                break;
+
+            case 16384:
+                ui->B6->setPixmap(QPixmap(":/pic/PIC/16384.jpg"));
+                break;
+
+            case 32768:
+                ui->B6->setPixmap(QPixmap(":/pic/PIC/32768.jpg"));
+                break;
+
+            case 65536:
+                ui->B6->setPixmap(QPixmap(":/pic/PIC/65536.jpg"));
                 break;
         }
         break;
@@ -382,6 +507,26 @@ void gamewindow::SetPic(blank & b)
             case 2048:
                 ui->B7->setPixmap(QPixmap(":/pic/PIC/2048.jpg"));
                 break;
+
+            case 4096:
+                ui->B7->setPixmap(QPixmap(":/pic/PIC/4096.jpg"));
+                break;
+
+            case 8192:
+                ui->B7->setPixmap(QPixmap(":/pic/PIC/8192.jpg"));
+                break;
+
+            case 16384:
+                ui->B7->setPixmap(QPixmap(":/pic/PIC/16384.jpg"));
+                break;
+
+            case 32768:
+                ui->B7->setPixmap(QPixmap(":/pic/PIC/32768.jpg"));
+                break;
+
+            case 65536:
+                ui->B7->setPixmap(QPixmap(":/pic/PIC/65536.jpg"));
+                break;
         }
         break;
 
@@ -434,6 +579,26 @@ void gamewindow::SetPic(blank & b)
 
             case 2048:
                 ui->B8->setPixmap(QPixmap(":/pic/PIC/2048.jpg"));
+                break;
+
+            case 4096:
+                ui->B8->setPixmap(QPixmap(":/pic/PIC/4096.jpg"));
+                break;
+
+            case 8192:
+                ui->B8->setPixmap(QPixmap(":/pic/PIC/8192.jpg"));
+                break;
+
+            case 16384:
+                ui->B8->setPixmap(QPixmap(":/pic/PIC/16384.jpg"));
+                break;
+
+            case 32768:
+                ui->B8->setPixmap(QPixmap(":/pic/PIC/32768.jpg"));
+                break;
+
+            case 65536:
+                ui->B8->setPixmap(QPixmap(":/pic/PIC/65536.jpg"));
                 break;
         }
         break;
@@ -488,6 +653,26 @@ void gamewindow::SetPic(blank & b)
             case 2048:
                 ui->B9->setPixmap(QPixmap(":/pic/PIC/2048.jpg"));
                 break;
+
+            case 4096:
+                ui->B9->setPixmap(QPixmap(":/pic/PIC/4096.jpg"));
+                break;
+
+            case 8192:
+                ui->B9->setPixmap(QPixmap(":/pic/PIC/8192.jpg"));
+                break;
+
+            case 16384:
+                ui->B9->setPixmap(QPixmap(":/pic/PIC/16384.jpg"));
+                break;
+
+            case 32768:
+                ui->B9->setPixmap(QPixmap(":/pic/PIC/32768.jpg"));
+                break;
+
+            case 65536:
+                ui->B9->setPixmap(QPixmap(":/pic/PIC/65536.jpg"));
+                break;
         }
         break;
 
@@ -540,6 +725,26 @@ void gamewindow::SetPic(blank & b)
 
             case 2048:
                 ui->B10->setPixmap(QPixmap(":/pic/PIC/2048.jpg"));
+                break;
+
+            case 4096:
+                ui->B10->setPixmap(QPixmap(":/pic/PIC/4096.jpg"));
+                break;
+
+            case 8192:
+                ui->B10->setPixmap(QPixmap(":/pic/PIC/8192.jpg"));
+                break;
+
+            case 16384:
+                ui->B10->setPixmap(QPixmap(":/pic/PIC/16384.jpg"));
+                break;
+
+            case 32768:
+                ui->B10->setPixmap(QPixmap(":/pic/PIC/32768.jpg"));
+                break;
+
+            case 65536:
+                ui->B10->setPixmap(QPixmap(":/pic/PIC/65536.jpg"));
                 break;
         }
         break;
@@ -594,6 +799,26 @@ void gamewindow::SetPic(blank & b)
             case 2048:
                 ui->B11->setPixmap(QPixmap(":/pic/PIC/2048.jpg"));
                 break;
+
+            case 4096:
+                ui->B11->setPixmap(QPixmap(":/pic/PIC/4096.jpg"));
+                break;
+
+            case 8192:
+                ui->B11->setPixmap(QPixmap(":/pic/PIC/8192.jpg"));
+                break;
+
+            case 16384:
+                ui->B11->setPixmap(QPixmap(":/pic/PIC/16384.jpg"));
+                break;
+
+            case 32768:
+                ui->B11->setPixmap(QPixmap(":/pic/PIC/32768.jpg"));
+                break;
+
+            case 65536:
+                ui->B11->setPixmap(QPixmap(":/pic/PIC/65536.jpg"));
+                break;
         }
         break;
 
@@ -646,6 +871,26 @@ void gamewindow::SetPic(blank & b)
 
             case 2048:
                 ui->B12->setPixmap(QPixmap(":/pic/PIC/2048.jpg"));
+                break;
+
+            case 4096:
+                ui->B12->setPixmap(QPixmap(":/pic/PIC/4096.jpg"));
+                break;
+
+            case 8192:
+                ui->B12->setPixmap(QPixmap(":/pic/PIC/8192.jpg"));
+                break;
+
+            case 16384:
+                ui->B12->setPixmap(QPixmap(":/pic/PIC/16384.jpg"));
+                break;
+
+            case 32768:
+                ui->B12->setPixmap(QPixmap(":/pic/PIC/32768.jpg"));
+                break;
+
+            case 65536:
+                ui->B12->setPixmap(QPixmap(":/pic/PIC/65536.jpg"));
                 break;
         }
         break;
@@ -700,6 +945,26 @@ void gamewindow::SetPic(blank & b)
             case 2048:
                 ui->B13->setPixmap(QPixmap(":/pic/PIC/2048.jpg"));
                 break;
+
+            case 4096:
+                ui->B13->setPixmap(QPixmap(":/pic/PIC/4096.jpg"));
+                break;
+
+            case 8192:
+                ui->B13->setPixmap(QPixmap(":/pic/PIC/8192.jpg"));
+                break;
+
+            case 16384:
+                ui->B13->setPixmap(QPixmap(":/pic/PIC/16384.jpg"));
+                break;
+
+            case 32768:
+                ui->B13->setPixmap(QPixmap(":/pic/PIC/32768.jpg"));
+                break;
+
+            case 65536:
+                ui->B13->setPixmap(QPixmap(":/pic/PIC/65536.jpg"));
+                break;
         }
         break;
 
@@ -752,6 +1017,26 @@ void gamewindow::SetPic(blank & b)
 
             case 2048:
                 ui->B14->setPixmap(QPixmap(":/pic/PIC/2048.jpg"));
+                break;
+
+            case 4096:
+                ui->B14->setPixmap(QPixmap(":/pic/PIC/4096.jpg"));
+                break;
+
+            case 8192:
+                ui->B14->setPixmap(QPixmap(":/pic/PIC/8192.jpg"));
+                break;
+
+            case 16384:
+                ui->B14->setPixmap(QPixmap(":/pic/PIC/16384.jpg"));
+                break;
+
+            case 32768:
+                ui->B14->setPixmap(QPixmap(":/pic/PIC/32768.jpg"));
+                break;
+
+            case 65536:
+                ui->B14->setPixmap(QPixmap(":/pic/PIC/65536.jpg"));
                 break;
         }
         break;
@@ -806,6 +1091,26 @@ void gamewindow::SetPic(blank & b)
             case 2048:
                 ui->B15->setPixmap(QPixmap(":/pic/PIC/2048.jpg"));
                 break;
+
+            case 4096:
+                ui->B15->setPixmap(QPixmap(":/pic/PIC/4096.jpg"));
+                break;
+
+            case 8192:
+                ui->B15->setPixmap(QPixmap(":/pic/PIC/8192.jpg"));
+                break;
+
+            case 16384:
+                ui->B15->setPixmap(QPixmap(":/pic/PIC/16384.jpg"));
+                break;
+
+            case 32768:
+                ui->B15->setPixmap(QPixmap(":/pic/PIC/32768.jpg"));
+                break;
+
+            case 65536:
+                ui->B15->setPixmap(QPixmap(":/pic/PIC/65536.jpg"));
+                break;
         }
         break;
 
@@ -859,6 +1164,26 @@ void gamewindow::SetPic(blank & b)
             case 2048:
                 ui->B16->setPixmap(QPixmap(":/pic/PIC/2048.jpg"));
                 break;
+
+            case 4096:
+                ui->B16->setPixmap(QPixmap(":/pic/PIC/4096.jpg"));
+                break;
+
+            case 8192:
+                ui->B16->setPixmap(QPixmap(":/pic/PIC/8192.jpg"));
+                break;
+
+            case 16384:
+                ui->B16->setPixmap(QPixmap(":/pic/PIC/16384.jpg"));
+                break;
+
+            case 32768:
+                ui->B16->setPixmap(QPixmap(":/pic/PIC/32768.jpg"));
+                break;
+
+            case 65536:
+                ui->B16->setPixmap(QPixmap(":/pic/PIC/65536.jpg"));
+                break;
         }
         break;
     }
@@ -870,6 +1195,9 @@ void gamewindow::init()
 {
     for (int i=0; i<17; i++)
     {
+        score=0;
+        check= true;
+        win= true;
         b[i].number=0;
         b[i].position=i;
         SetPic(b[i]);
@@ -879,16 +1207,18 @@ void gamewindow::init()
     return;
 }
 
-//讓他隨機產一個2的位置
-void gamewindow::SetRandom()
+//讓他隨機產一個2或4的位置
+void gamewindow::SetRandom(void)
 {
     while(1)
     {
         int a= rand()%16+1;
+        int x= rand()%2+1;
+        int num= 2*x;
 
         if (b[a].number == 0)
         {
-            b[a].number=2;
+            b[a].number=num;
             SetPic(b[a]);
             return;
         }
@@ -898,6 +1228,9 @@ void gamewindow::SetRandom()
 //遊戲開始
 void gamewindow::GameStart()
 {
+    ui->WIN->hide();
+    ui->LOSE->hide();
+    ui->pushButton_cont->hide();
     qDebug()<< "init";
     init();
     SetRandom();
@@ -908,160 +1241,203 @@ void gamewindow::GameStart()
 //用keyPressEvent接收鍵盤輸入的指令並移動
 void gamewindow::keyPressEvent(QKeyEvent *event)
 {
-    if (event->key()== Qt::Key_Left)
+    //如果不再在win的畫面
+    if (check == true)
     {
-        for (int i=0; i<4; i++)
+        if (event->key()== Qt::Key_Left)
         {
-            for (int k=2+4*i; k<=4+4*i; k++)
+            for (int i=0; i<4; i++)
             {
-                for (int j=k; j>4*i+1; j--)
+                for (int k=2+4*i; k<=4+4*i; k++)
                 {
-                    if ((b[j].number!=0) && (b[j-1].number == b[j].number) && (b[j-1].isAdded==false) )
+                    for (int j=k; j>4*i+1; j--)
                     {
-                        b[j-1].number*=2;
-                        b[j-1].isAdded= true;
-                        b[j-1].isMoved= true;
-                        SetPic(b[j-1]);
+                        if ((b[j].number!=0) && (b[j-1].number == b[j].number) && (b[j-1].isAdded==false) && (b[j].isAdded==false))
+                        {
+                            b[j-1].number*=2;
+                            score= score+ b[j-1].number*2;
+                            b[j-1].isAdded= true;
+                            b[j-1].isMoved= true;
+                            SetPic(b[j-1]);
 
-                        b[j].number=0;
-                        b[j].isAdded= false;
-                        b[j].isMoved= false;
-                        SetPic(b[j]);
-                    }
-                    else if ((b[j].number!=0) && (b[j-1].number == 0))
-                    {
-                        b[j-1].number= b[j].number;
-                        b[j-1].isAdded= b[j].isAdded;
-                        b[j-1].isMoved= true;
-                        SetPic(b[j-1]);
+                            b[j].number=0;
+                            b[j].isAdded= false;
+                            b[j].isMoved= false;
+                            SetPic(b[j]);
+                        }
+                        else if ((b[j].number!=0) && (b[j-1].number == 0))
+                        {
+                            b[j-1].number= b[j].number;
+                            score= score+2;
+                            b[j-1].isAdded= b[j].isAdded;
+                            b[j-1].isMoved= true;
+                            SetPic(b[j-1]);
 
-                        b[j].number=0;
-                        b[j].isAdded= false;
-                        b[j].isMoved= false;
-                        SetPic(b[j]);
+                            b[j].number=0;
+                            b[j].isAdded= false;
+                            b[j].isMoved= false;
+                            SetPic(b[j]);
+                        }
                     }
                 }
             }
         }
-    }
-    else if (event->key()==Qt::Key_Right)
-    {
-        for (int i=0; i<4; i++)
+        else if (event->key()==Qt::Key_Right)
         {
-            for (int k=3+4*i; k>=1+4*i; k--)
+            for (int i=0; i<4; i++)
             {
-                for (int j=k; j<(i+1)*4; j++)
+                for (int k=3+4*i; k>=1+4*i; k--)
                 {
-                    if ((b[j].number!=0) && (b[j+1].number == b[j].number) && (b[j+1].isAdded==false) && (b[j].isAdded==false) )
+                    for (int j=k; j<(i+1)*4; j++)
                     {
-                        b[j+1].number*=2;
-                        b[j+1].isAdded= true;
-                        b[j+1].isMoved= true;
-                        SetPic(b[j+1]);
+                        if ((b[j].number!=0) && (b[j+1].number == b[j].number) && (b[j+1].isAdded==false) && (b[j].isAdded==false) )
+                        {
+                            b[j+1].number*=2;
+                            score= score+ b[j+1].number*2;
+                            b[j+1].isAdded= true;
+                            b[j+1].isMoved= true;
+                            SetPic(b[j+1]);
 
-                        b[j].number=0;
-                        b[j].isAdded= false;
-                        b[j].isMoved= false;
-                        SetPic(b[j]);
-                    }
+                            b[j].number=0;
+                            b[j].isAdded= false;
+                            b[j].isMoved= false;
+                            SetPic(b[j]);
+                        }
 
-                    else if ((b[j].number!=0) && (b[j+1].number == 0))
-                    {
-                        b[j+1].number= b[j].number;
-                        b[j+1].isAdded= b[j].isAdded;
-                        b[j+1].isMoved= true;
-                        SetPic(b[j+1]);
+                        else if ((b[j].number!=0) && (b[j+1].number == 0))
+                        {
+                            b[j+1].number= b[j].number;
+                            score=score+2;
+                            b[j+1].isAdded= b[j].isAdded;
+                            b[j+1].isMoved= true;
+                            SetPic(b[j+1]);
 
-                        b[j].number=0;
-                        b[j].isAdded= false;
-                        b[j].isMoved= false;
-                        SetPic(b[j]);
+                            b[j].number=0;
+                            b[j].isAdded= false;
+                            b[j].isMoved= false;
+                            SetPic(b[j]);
+                        }
                     }
                 }
             }
         }
-    }
-    else if (event->key()==Qt::Key_Up)
-    {
-        for (int i=0; i<4; i++)
+        else if (event->key()==Qt::Key_Up)
         {
-            for (int k=5+i; k<=13+i; k=k+4)
+            for (int i=0; i<4; i++)
             {
-                for(int j= k; j>1+i; j=j-4)
+                for (int k=5+i; k<=13+i; k=k+4)
                 {
-                    if ((b[j].number!=0) && (b[j-4].number == b[j].number) && (b[j-4].isAdded==false) && (b[j].isAdded==false) )
+                    for(int j= k; j>1+i; j=j-4)
                     {
-                        b[j-4].number*=2;
-                        b[j-4].isAdded= true;
-                        b[j-4].isMoved= true;
-                        SetPic(b[j-4]);
+                        if ((b[j].number!=0) && (b[j-4].number == b[j].number) && (b[j-4].isAdded==false) && (b[j].isAdded==false) )
+                        {
+                            b[j-4].number*=2;
+                            score= score+ b[j-4].number*2;
+                            b[j-4].isAdded= true;
+                            b[j-4].isMoved= true;
+                            SetPic(b[j-4]);
 
-                        b[j].number=0;
-                        b[j].isAdded= false;
-                        b[j].isMoved= false;
-                        SetPic(b[j]);
-                    }
+                            b[j].number=0;
+                            b[j].isAdded= false;
+                            b[j].isMoved= false;
+                            SetPic(b[j]);
+                        }
 
-                    else if ((b[j].number!=0) && (b[j-4].number == 0))
-                    {
-                        b[j-4].number= b[j].number;
-                        b[j-4].isAdded= b[j].isAdded;
-                        b[j-4].isMoved= true;
-                        SetPic(b[j-4]);
+                        else if ((b[j].number!=0) && (b[j-4].number == 0))
+                        {
+                            b[j-4].number= b[j].number;
+                            score=score+2;
+                            b[j-4].isAdded= b[j].isAdded;
+                            b[j-4].isMoved= true;
+                            SetPic(b[j-4]);
 
-                        b[j].number=0;
-                        b[j].isAdded= false;
-                        b[j].isMoved= false;
-                        SetPic(b[j]);
+                            b[j].number=0;
+                            b[j].isAdded= false;
+                            b[j].isMoved= false;
+                            SetPic(b[j]);
+                        }
                     }
                 }
             }
         }
-    }
-    else if (event->key()==Qt::Key_Down)
-    {
-        for (int i=0; i<4; i++)
+        else if (event->key()==Qt::Key_Down)
         {
-            for (int k=9+i; k>=1+i; k=k-4)
+            for (int i=0; i<4; i++)
             {
-                for (int j=k; j<13+i; j=j+4)
+                for (int k=9+i; k>=1+i; k=k-4)
                 {
-                    if ((b[j].number!=0) && (b[j+4].number == b[j].number) && (b[j+4].isAdded==false) && (b[j].isAdded==false) )
+                    for (int j=k; j<13+i; j=j+4)
                     {
-                        b[j+4].number*=2;
-                        b[j+4].isAdded= true;
-                        b[j+4].isMoved= true;
-                        SetPic(b[j+4]);
+                        if ((b[j].number!=0) && (b[j+4].number == b[j].number) && (b[j+4].isAdded==false) && (b[j].isAdded==false) )
+                        {
+                            b[j+4].number*=2;
+                            score= score+ b[j+4].number*2;
+                            b[j+4].isAdded= true;
+                            b[j+4].isMoved= true;
+                            SetPic(b[j+4]);
 
-                        b[j].number=0;
-                        b[j].isAdded= false;
-                        b[j].isMoved= false;
-                        SetPic(b[j]);
+                            b[j].number=0;
+                            b[j].isAdded= false;
+                            b[j].isMoved= false;
+                            SetPic(b[j]);
+                        }
+
+                        else if ((b[j].number!=0) && (b[j+4].number == 0))
+                        {
+                            b[j+4].number= b[j].number;
+                            score=score+2;
+                            b[j+4].isAdded= b[j].isAdded;
+                            b[j+4].isMoved= true;
+                            SetPic(b[j+4]);
+
+                            b[j].number=0;
+                            b[j].isAdded= false;
+                            b[j].isMoved= false;
+                            SetPic(b[j]);
+                        }
                     }
 
-                    else if ((b[j].number!=0) && (b[j+4].number == 0))
-                    {
-                        b[j+4].number= b[j].number;
-                        b[j+4].isAdded= b[j].isAdded;
-                        b[j+4].isMoved= true;
-                        SetPic(b[j+4]);
-
-                        b[j].number=0;
-                        b[j].isAdded= false;
-                        b[j].isMoved= false;
-                        SetPic(b[j]);
-                    }
                 }
-
             }
         }
     }
+
     //如果有格子順利被移動
     //先隨機產生新的2 再把move 跟 add 初始化
     if (Moved())
     {
         SetRandom();
         initMoveAdd();
+        str= QString::number(score,10);
+        ui->SCORE->setText(str);
+
+        //如果還沒達到2048過
+        if (win==true)
+        {
+            if (GameWin())
+            {
+                ui->WIN->setPixmap(QPixmap(":/pic/PIC/win.jpg"));
+                ui->WIN->show();
+                ui->pushButton_cont->show();
+                check= false;
+            }
+
+            else if(GameOver())
+            {
+                ui->LOSE->setPixmap(QPixmap(":/pic/PIC/lose.jpg"));
+                ui->LOSE->show();
+            }
+        }
+
+        //若已經達到2048
+        else
+        {
+            if(GameOver())
+            {
+                ui->LOSE->setPixmap(QPixmap(":/pic/PIC/lose.jpg"));
+                ui->LOSE->show();
+            }
+        }
     }
 }
 
@@ -1136,4 +1512,26 @@ bool gamewindow::GameOver()
 gamewindow::~gamewindow()
 {
     delete ui;
+}
+
+//設定重新開始的按鈕
+void gamewindow::on_pushButton_Restart_clicked()
+{
+    init();
+    SetRandom();
+    SetRandom();
+    ui->WIN->hide();
+    ui->LOSE->hide();
+    ui->pushButton_cont->hide();
+    return;
+}
+
+
+
+void gamewindow::on_pushButton_cont_clicked()
+{
+    check= true;
+    ui->WIN->hide();
+    ui->pushButton_cont->hide();
+    win= false;
 }

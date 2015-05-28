@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>707</width>
-    <height>641</height>
+    <width>650</width>
+    <height>650</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>-10</y>
+      <x>130</x>
+      <y>10</y>
       <width>381</width>
       <height>251</height>
      </rect>
@@ -62,8 +62,8 @@
     </property>
     <property name="font">
      <font>
-      <family>Copperplate Gothic Bold</family>
-      <pointsize>60</pointsize>
+      <family>New Waltograph</family>
+      <pointsize>70</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -72,61 +72,126 @@
      <string>2 0 4 8</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_End">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>370</y>
-      <width>193</width>
-      <height>81</height>
+      <x>50</x>
+      <y>320</y>
+      <width>516</width>
+      <height>202</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>Copperplate Gothic Bold</family>
-      <pointsize>26</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="focusPolicy">
-     <enum>Qt::NoFocus</enum>
-    </property>
-    <property name="text">
-     <string>End</string>
-    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_Start">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Copperplate Gothic Bold</family>
+         <pointsize>28</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="pic.qrc">
+         <normaloff>:/pic/PIC/start.jpg</normaloff>:/pic/PIC/start.jpg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>100</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_End">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Copperplate Gothic Bold</family>
+         <pointsize>26</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="pic.qrc">
+         <normaloff>:/pic/PIC/end.jpg</normaloff>:/pic/PIC/end.jpg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
-   <widget class="QPushButton" name="pushButton_Start">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>370</y>
-      <width>193</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Copperplate Gothic Bold</family>
-      <pointsize>28</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="focusPolicy">
-     <enum>Qt::NoFocus</enum>
-    </property>
-    <property name="text">
-     <string>Start</string>
-    </property>
-   </widget>
+   <zorder>layoutWidget</zorder>
+   <zorder>label</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>707</width>
+     <width>650</width>
      <height>25</height>
     </rect>
    </property>
@@ -142,7 +207,9 @@
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="pic.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>pushButton_End</sender>

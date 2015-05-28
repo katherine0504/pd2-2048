@@ -8,6 +8,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setStyleSheet("background-color: white;");
 
     connect(ui->pushButton_Start, SIGNAL(click()),
             this, SLOT(on_pushButton_Start_clicked()) );
