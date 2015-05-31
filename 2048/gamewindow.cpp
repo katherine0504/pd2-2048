@@ -1196,6 +1196,8 @@ void gamewindow::init()
     for (int i=0; i<17; i++)
     {
         score=0;
+        str= QString::number(score,10);
+        ui->SCORE->setText(str);
         check= true;
         win= true;
         b[i].number=0;
@@ -1212,9 +1214,16 @@ void gamewindow::SetRandom(void)
 {
     while(1)
     {
+        int i= rand()%8+1;
+        int num;
         int a= rand()%16+1;
-        int x= rand()%2+1;
-        int num= 2*x;
+
+        if (i == 1)
+            num= 4;
+        else
+            num= 2;
+
+        qDebug() << num;
 
         if (b[a].number == 0)
         {
@@ -1241,7 +1250,7 @@ void gamewindow::GameStart()
 //用keyPressEvent接收鍵盤輸入的指令並移動
 void gamewindow::keyPressEvent(QKeyEvent *event)
 {
-    //如果不再在win的畫面
+    //如果不在win的畫面
     if (check == true)
     {
         if (event->key()== Qt::Key_Left)
@@ -1255,7 +1264,7 @@ void gamewindow::keyPressEvent(QKeyEvent *event)
                         if ((b[j].number!=0) && (b[j-1].number == b[j].number) && (b[j-1].isAdded==false) && (b[j].isAdded==false))
                         {
                             b[j-1].number*=2;
-                            score= score+ b[j-1].number*2;
+                            score= score+ (b[j-1].number)*2;
                             b[j-1].isAdded= true;
                             b[j-1].isMoved= true;
                             SetPic(b[j-1]);
@@ -1293,7 +1302,7 @@ void gamewindow::keyPressEvent(QKeyEvent *event)
                         if ((b[j].number!=0) && (b[j+1].number == b[j].number) && (b[j+1].isAdded==false) && (b[j].isAdded==false) )
                         {
                             b[j+1].number*=2;
-                            score= score+ b[j+1].number*2;
+                            score= score+ (b[j+1].number)*2;
                             b[j+1].isAdded= true;
                             b[j+1].isMoved= true;
                             SetPic(b[j+1]);
@@ -1332,7 +1341,7 @@ void gamewindow::keyPressEvent(QKeyEvent *event)
                         if ((b[j].number!=0) && (b[j-4].number == b[j].number) && (b[j-4].isAdded==false) && (b[j].isAdded==false) )
                         {
                             b[j-4].number*=2;
-                            score= score+ b[j-4].number*2;
+                            score= score+ (b[j-4].number)*2;
                             b[j-4].isAdded= true;
                             b[j-4].isMoved= true;
                             SetPic(b[j-4]);
@@ -1371,7 +1380,7 @@ void gamewindow::keyPressEvent(QKeyEvent *event)
                         if ((b[j].number!=0) && (b[j+4].number == b[j].number) && (b[j+4].isAdded==false) && (b[j].isAdded==false) )
                         {
                             b[j+4].number*=2;
-                            score= score+ b[j+4].number*2;
+                            score= score+ (b[j+4].number)*2;
                             b[j+4].isAdded= true;
                             b[j+4].isMoved= true;
                             SetPic(b[j+4]);
@@ -1432,11 +1441,21 @@ void gamewindow::keyPressEvent(QKeyEvent *event)
         //若已經達到2048
         else
         {
-            if(GameOver())
+            for (int i=1; i<17; i++)
             {
-                ui->LOSE->setPixmap(QPixmap(":/pic/PIC/lose.jpg"));
-                ui->LOSE->show();
+                if (b[i].number == 65536)
+                {
+                    ui->LOSE->setPixmap(QPixmap(":/pic/PIC/success.jpg"));
+                    ui->LOSE->show();
+                }
+
+                else if (GameOver())
+                {
+                    ui->LOSE->setPixmap(QPixmap(":/pic/PIC/lose.jpg"));
+                    ui->LOSE->show();
+                }
             }
+
         }
     }
 }

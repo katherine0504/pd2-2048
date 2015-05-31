@@ -26,5 +26,6 @@
         <file>PIC/16384.jpg</file>
         <file>PIC/32768.jpg</file>
         <file>PIC/65536.jpg</file>
+        <file>PIC/success.jpg</file>
     </qresource>
 </RCC>
